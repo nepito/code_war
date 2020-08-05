@@ -1,27 +1,12 @@
-image: docker:19.03.12
-
-before_script:
-    - docker info
-
-stages:
-    - build
-    - test
-
-build:
+docker-build-master:
+    # Official docker image.
+    image: docker:latest
     stage: build
+    services:
+      - docker:dind
+    before_script:
+      - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
     script:
-        - echo "Build"
-        - docker build --tag islasgeci .
-        - docker run islasgeci make tests
-        - docker run islasgeci make mutants
-        - mkdir build
-        - touch build/info.txt
-    artifacts:
-        paths:
-            - build/
-
-test:
-    stage: test
-    script:
-        - echo "Testing"
-        - test -f "build/info.txt"
+      - docker build --pull -t islasgeci .
+      - docker push islasgeci
+      - docker run islasgeci make tests
