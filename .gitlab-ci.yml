@@ -1,5 +1,8 @@
 image: docker:19.03.12
 
+before_script:
+    - docker info
+
 stages:
     - build
     - test
