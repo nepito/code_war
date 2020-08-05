@@ -1,4 +1,4 @@
-import Calculator from '../src/';
+import Calculator from '../src/Calculator';
 
 describe('calculate', function() {
   it('add', function() {
