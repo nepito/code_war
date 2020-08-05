@@ -6,6 +6,9 @@ build:
     stage: build
     script:
         - echo "Build"
+        - docker build --tag islasgeci .
+        - docker run islasgeci make tests
+        - docker run islasgeci make mutants
         - mkdir build
         - touch build/info.txt
     artifacts:
