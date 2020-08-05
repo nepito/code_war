@@ -9,3 +9,4 @@ docker-build-master:
     script:
       - docker build --pull -t islasgeci .
       - docker run islasgeci make tests
+      - docker run islasgeci make mutants
