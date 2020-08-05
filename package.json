@@ -1,0 +1,11 @@
+{
+  "name": "mumbling",
+  "private": true,
+  "license": "ISC",
+  "scripts": {
+    "test": "yarn workspace mumbling test"
+  },
+  "workspaces": [
+    "mumbling"
+  ]
+}
