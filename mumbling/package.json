@@ -7,17 +7,17 @@
     "test": "jest"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/keplersj/ejemplo-mutantes-typescript.git"
+    "type": "",
+    "url": ""
   },
   "keywords": [
   ],
-  "author": "Kepler Sticka-Jones <kepler@stickajones.org>",
-  "license": "ISC",
+  "author": "",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/keplersj/ejemplo-mutantes-typescript/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/keplersj/ejemplo-mutantes-typescript#readme",
+  "homepage": "",
   "devDependencies": {
     "@stryker-mutator/core": "^3.1.0",
     "@stryker-mutator/html-reporter": "^3.1.0",
