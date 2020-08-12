@@ -22,9 +22,5 @@
     "react-test-renderer": "^16.13.1",
     "semantic-release": "^17.0.7",
     "typescript": "^3.8.3"
-  },
-  "peerDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
   }
 }
