@@ -23,16 +23,6 @@
     "semantic-release": "^17.0.7",
     "typescript": "^3.8.3"
   },
-  "dependencies": {
-    "@types/lodash": "^4.14.150",
-    "@types/react-helmet": "^5.0.15",
-    "lodash": "^4.17.15",
-    "mkdirp": "^1.0.4",
-    "react-helmet": "^6.0.0",
-    "react-schemaorg": "^1.0.1",
-    "schema-dts": "^0.5.3",
-    "typeface-roboto": "^0.0.75"
-  },
   "peerDependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
