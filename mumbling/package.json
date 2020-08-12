@@ -6,18 +6,6 @@
   "scripts": {
     "test": "jest"
   },
-  "repository": {
-    "type": "",
-    "url": ""
-  },
-  "keywords": [
-  ],
-  "author": "",
-  "license": "",
-  "bugs": {
-    "url": ""
-  },
-  "homepage": "",
   "devDependencies": {
     "@stryker-mutator/core": "^3.1.0",
     "@stryker-mutator/html-reporter": "^3.1.0",
