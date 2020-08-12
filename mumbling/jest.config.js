@@ -3,7 +3,11 @@ module.exports = {
   projects: [
     {
       displayName: "test",
-      preset: "jest-preset-gatsby/typescript",
+      transform: {
+        "^.+\\.tsx?$": "<rootDir>/preprocess.js",
+      },
+      testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.([tj]sx?)$",
+      moduleFileExtensions: ["ts", "tsx", "js"],
       collectCoverage: true,
     },
   ],
