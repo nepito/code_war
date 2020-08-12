@@ -17,8 +17,6 @@
     "@types/react-test-renderer": "^16.9.2",
     "jest": "^25.5.4",
     "jest-preset-gatsby": "^1.0.51",
-    "jest-serializer-json-ld-script": "^1.0.7",
-    "jest-serializer-react-helmet": "^1.0.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-test-renderer": "^16.13.1",
