@@ -11,14 +11,6 @@
     "url": "https://github.com/keplersj/ejemplo-mutantes-typescript.git"
   },
   "keywords": [
-    "gatsby",
-    "gatsby-theme",
-    "atom",
-    "atomlinter",
-    "atom-linter",
-    "atombuild",
-    "atom-build",
-    "lint"
   ],
   "author": "Kepler Sticka-Jones <kepler@stickajones.org>",
   "license": "ISC",
