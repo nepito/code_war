@@ -1,0 +1,11 @@
+{
+  "name": "code_war",
+  "private": true,
+  "license": "ISC",
+  "scripts": {
+    "test": "yarn workspace no_oddities_here test"
+  },
+  "workspaces": [
+    "no_oddities_here"
+  ]
+}
