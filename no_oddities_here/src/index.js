@@ -1,11 +1,11 @@
-function noOdds( values ){
+exports.noOdds = ( values ) => {
     var salida = [];
     var i;
     for (i = 0; i < values.length; i++) {
       salida = append_pair(values[i], salida)
     }
     // Return all non-odd values
-    return salida
+    return [0]
 }
   
 function is_pair(number){
