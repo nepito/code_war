@@ -1,11 +1,11 @@
-exports.noOdds = ( values ) => {
+function noOdds( values ){
     var salida = [];
     var i;
     for (i = 0; i < values.length; i++) {
       salida = append_pair(values[i], salida)
     }
     // Return all non-odd values
-    return [0]
+    return salida
 }
   
 function is_pair(number){
@@ -19,9 +19,15 @@ function is_pair(number){
   }
 }
   
-function append_pair(number, array){
+function append_pair(number, arreglo){
   if (is_pair(number)){
-    array = array.push(number);
+    arreglo.push(number);
   }
-  return array
+  return arreglo
 }
+
+module.exports = {
+  noOdds: noOdds,
+  is_pair: is_pair,
+  append_pair: append_pair
+};
