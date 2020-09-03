@@ -10,10 +10,12 @@ function string2setarray( string ){
 }
 
 function count_each_element( arreglo ){
-    var i;
+    var i_elemento;
     var cuenta = [];
-    for (i = 0; i < arreglo.length; i++) {
-        cuenta.push(1);
+    var elementos = [...new Set(arreglo)]
+    for (i_elemento = 0; i_elemento < elementos.length; i_elemento++) {
+        var cuenta_elemento = count_element(arreglo, elementos[i_elemento]);
+        cuenta.push(cuenta_elemento);
     }
     return cuenta
 };
