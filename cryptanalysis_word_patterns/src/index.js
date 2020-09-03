@@ -3,8 +3,8 @@ function wordPattern(){
     return salida
 }
 
-function string2array(){
-    return ["A"];
+function string2array( string ){
+    return [string];
 }
 
 module.exports = {
