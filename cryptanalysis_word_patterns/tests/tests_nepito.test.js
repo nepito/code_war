@@ -10,6 +10,9 @@ describe("Function string2array convert an string to an array", function() {
         expected = ["B"];
         obtained = cwp.string2array("B");
         expect(expected).toStrictEqual(obtained);
+        expected = ["AB"];
+        obtained = cwp.string2array("AB");
+        expect(expected).toStrictEqual(obtained);
 
     });
 });
