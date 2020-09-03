@@ -31,6 +31,9 @@ describe("Should count how many times is each element", function(){
         var expected = [2];
         var obtained = cwp.count_each_element(["A", "A"]);
         expect(expected).toStrictEqual(obtained);
+        var expected = [2,1];
+        var obtained = cwp.count_each_element(["A", "N", "A"]);
+        expect(expected).toStrictEqual(obtained);
     });
 });
 
