@@ -1,6 +1,7 @@
+const answer = require("../src/index")
 describe("Example Tests", function() {
-    it("should pass fixed tests", function() {
-        var obtained = wordPattern("hello");
+    test("should pass fixed tests", function() {
+        var obtained = answer.wordPattern("hello");
         var expected = "0.1.2.2.3";
         expect(expected).toBe(obtained);
         obtained = wordPattern("helLo");
