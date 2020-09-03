@@ -33,3 +33,14 @@ describe("Should count how many times is each element", function(){
         expect(expected).toStrictEqual(obtained);
     });
 });
+
+describe("Should count how many times is an element", function(){
+    test("Should be a function count_element", function(){
+        expect(typeof cwp.count_element).toBe("function");
+    });
+    test("Shoul count how many times is each element", function(){
+        var expected = 1;
+        var obtained = cwp.count_element(["A"],"A");
+        expect(expected).toStrictEqual(obtained);
+    });
+});
