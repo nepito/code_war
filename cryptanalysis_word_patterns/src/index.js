@@ -18,8 +18,15 @@ function count_each_element( arreglo ){
     return cuenta
 };
 
-function count_element(){
-    return 1
+function count_element(arreglo, elemento){
+    var i_elemento;
+    var cuenta = 0;
+    for (i_elemento = 0; i_elemento < arreglo.length; i_elemento++) {
+        if (arreglo[i_elemento] == elemento) {
+            cuenta++;
+        }
+    }
+    return cuenta
 };
 
 
