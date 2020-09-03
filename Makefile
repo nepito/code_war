@@ -6,8 +6,8 @@ mutants:
 
 clean: 
 	rm --force --recursive node_modules
-	rm --force --recursive no_oddities_here/coverage
-	rm --force --recursive no_oddities_here/node_modules
+	rm --force --recursive **/coverage
+	rm --force --recursive **/node_modules
 tests:
 	yarn
 	yarn test -u
