@@ -9,7 +9,9 @@ function string2setarray( string ){
     return salida
 }
 
-function count_each_element(){};
+function count_each_element(){
+    return [1]
+};
 
 
 module.exports = {
