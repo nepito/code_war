@@ -9,8 +9,11 @@ function string2setarray( string ){
     return salida
 }
 
+function count_each_element(){};
+
 
 module.exports = {
   wordPattern: wordPattern,
   string2setarray: string2setarray,
+  count_each_element:count_each_element,
 };
