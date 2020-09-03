@@ -3,12 +3,12 @@ function wordPattern(){
     return salida
 }
 
-function string2array( string ){
+function string2setarray( string ){
     var salida = string.split("");
     return salida
 }
 
 module.exports = {
   wordPattern: wordPattern,
-  string2array: string2array
+  string2setarray: string2setarray
 };
