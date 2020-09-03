@@ -6,6 +6,7 @@
     "test": "yarn workspace no_oddities_here test"
   },
   "workspaces": [
-    "no_oddities_here"
+    "no_oddities_here",
+    "cryptanalysis_word_patterns"
   ]
 }
