@@ -9,8 +9,13 @@ function string2setarray( string ){
     return salida
 }
 
-function count_each_element(){
-    return [1]
+function count_each_element( arreglo ){
+    var i;
+    var cuenta = [];
+    for (i = 0; i < arreglo.length; i++) {
+        cuenta.push(1);
+    }
+    return cuenta
 };
 
 
