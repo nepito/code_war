@@ -4,7 +4,8 @@ function wordPattern(){
 }
 
 function string2array( string ){
-    return [string];
+    var salida = string.split("");
+    return salida
 }
 
 module.exports = {
