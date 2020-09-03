@@ -17,8 +17,13 @@ describe("Function string2setarray convert an string to an set array", function(
     });
 });
 
-describe("Should count how many times is each elements", function(){
+describe("Should count how many times is each element", function(){
     test("Should be a function count_each_element", function(){
         expect(typeof cwp.count_each_element).toBe("function");
+    });
+    test("Shoul count how many times is each element", function(){
+        var expected = [1];
+        var obtained = cwp.count_each_element(["A"]);
+        expect(expected).toStrictEqual(obtained);
     });
 });
