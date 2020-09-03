@@ -18,9 +18,12 @@ function count_each_element( arreglo ){
     return cuenta
 };
 
+function count_element(){};
+
 
 module.exports = {
   wordPattern: wordPattern,
   string2setarray: string2setarray,
   count_each_element:count_each_element,
+  count_element:count_element,
 };
