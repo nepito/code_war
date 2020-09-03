@@ -16,3 +16,9 @@ describe("Function string2setarray convert an string to an set array", function(
         expect(expected).toStrictEqual(obtained);
     });
 });
+
+describe("Should count how many times is each elements", function(){
+    test("Should be a function count_each_element", function(){
+        expect(typeof cwp.count_each_element).toBe("function");
+    });
+});
