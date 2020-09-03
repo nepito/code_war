@@ -4,18 +4,13 @@ function wordPattern(){
 }
 
 function string2setarray( string ){
-    var salida = string.split("");
+    var arreglo = string.split("");
+    var salida = [...new Set(arreglo)];
     return salida
-}
-
-function array2set( arreglo ){
-    var conjunto = [...new Set(arreglo)]; 
-    return conjunto
 }
 
 
 module.exports = {
   wordPattern: wordPattern,
   string2setarray: string2setarray,
-  array2set: array2set
 };
