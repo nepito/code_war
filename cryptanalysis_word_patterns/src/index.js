@@ -8,7 +8,10 @@ function string2setarray( string ){
     return salida
 }
 
-function array2set(){}
+function array2set(){
+    return ["A"]
+}
+
 
 module.exports = {
   wordPattern: wordPattern,
