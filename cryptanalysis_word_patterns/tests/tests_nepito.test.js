@@ -25,5 +25,8 @@ describe("Function array2set convert an array to an set", function() {
         var expected = ["A"];
         var obtained = cwp.array2set(["A"]);
         expect(expected).toStrictEqual(obtained);
+        expected = ["B"];
+        obtained = cwp.array2set(["B"]);
+        expect(expected).toStrictEqual(obtained);
     });
 });
