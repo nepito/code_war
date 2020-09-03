@@ -7,11 +7,11 @@ describe("Function string2setarray convert an string to an set array", function(
         var expected = ["A"];
         var obtained = cwp.string2setarray("A");
         expect(expected).toStrictEqual(obtained);
-        expected = ["B"];
-        obtained = cwp.string2setarray("B");
-        expect(expected).toStrictEqual(obtained);
         expected = ["A", "B"];
         obtained = cwp.string2setarray("AB");
+        expect(expected).toStrictEqual(obtained);
+        expected = ["A", "N"];
+        obtained = cwp.string2setarray("ANA");
         expect(expected).toStrictEqual(obtained);
 
     });
