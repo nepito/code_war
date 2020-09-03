@@ -42,5 +42,8 @@ describe("Should count how many times is an element", function(){
         var expected = 1;
         var obtained = cwp.count_element(["A"],"A");
         expect(expected).toStrictEqual(obtained);
+        var expected = 2;
+        var obtained = cwp.count_element(["A", "A"],"A");
+        expect(expected).toStrictEqual(obtained);
     });
 });
