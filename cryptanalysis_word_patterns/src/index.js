@@ -18,7 +18,9 @@ function count_each_element( arreglo ){
     return cuenta
 };
 
-function count_element(){};
+function count_element(){
+    return 1
+};
 
 
 module.exports = {
