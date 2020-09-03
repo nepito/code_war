@@ -4,7 +4,7 @@ function wordPattern(){
 }
 
 function string2array(){
-
+    return ["A"];
 }
 
 module.exports = {
