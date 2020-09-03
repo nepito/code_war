@@ -8,8 +8,9 @@ function string2setarray( string ){
     return salida
 }
 
-function array2set(){
-    return ["A"]
+function array2set( arreglo ){
+    var conjunto = [...new Set(arreglo)]; 
+    return conjunto
 }
 
 
