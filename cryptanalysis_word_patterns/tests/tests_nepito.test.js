@@ -1,4 +1,5 @@
 const cwp = require("../src/index")
+
 describe("Function string2setarray convert an string to an set array", function() {
     test("should be a function", function(){
         expect(typeof cwp.string2setarray).toBe("function");
@@ -13,7 +14,6 @@ describe("Function string2setarray convert an string to an set array", function(
         expected = ["A", "N"];
         obtained = cwp.string2setarray("ANA");
         expect(expected).toStrictEqual(obtained);
-
     });
 });
 
@@ -27,6 +27,9 @@ describe("Function array2set convert an array to an set", function() {
         expect(expected).toStrictEqual(obtained);
         expected = ["B"];
         obtained = cwp.array2set(["B"]);
+        expect(expected).toStrictEqual(obtained);
+        expected = ["A", "N"];
+        obtained = cwp.array2set(["A", "N", "A"]);
         expect(expected).toStrictEqual(obtained);
     });
 });
