@@ -21,7 +21,10 @@ describe("Function letter2index change the letter to an index", function() {
     test("should be a function", function(){
         expect(typeof cwp.letter2index).toBe("function");
     });
-    test("should return an right array", function(){
+    test("should return an right string", function(){
+        var expected = "0"
+        var obtained = cwp.letter2index("A")
+        expect(expected).toStrictEqual(obtained)
     });
 });
 
