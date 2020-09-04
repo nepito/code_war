@@ -16,5 +16,8 @@ describe("Should the function sum_elements_array return the sum", function(){
         var expected = 1;
         var obtained = sop.sum_elements_array([1]);
         expect(obtained).toStrictEqual(expected);
+        var expected = 2;
+        var obtained = sop.sum_elements_array([2]);
+        expect(obtained).toStrictEqual(expected);
     });
 });
