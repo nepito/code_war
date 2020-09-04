@@ -1,5 +1,6 @@
-function wordPattern(){
-    var salida = "0.1.2.2.3"
+function wordPattern(palabra){
+    let capital_word = palabra.toLowerCase();
+    var salida = letter2index(capital_word);
     return salida
 }
 
