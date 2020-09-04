@@ -16,3 +16,12 @@ describe("Function string2setarray convert an string to an set array", function(
         expect(expected).toStrictEqual(obtained);
     });
 });
+
+describe("Function letter2index change the letter to an index", function() {
+    test("should be a function", function(){
+        expect(typeof cwp.letter2index).toBe("function");
+    });
+    test("should return an right array", function(){
+    });
+});
+
