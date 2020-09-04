@@ -25,6 +25,12 @@ describe("Function letter2index change the letter to an index", function() {
         var expected = "0"
         var obtained = cwp.letter2index("A")
         expect(expected).toStrictEqual(obtained)
+        var expected = "0.0"
+        var obtained = cwp.letter2index("AA")
+        expect(expected).toStrictEqual(obtained)
+        var expected = "0.1.0"
+        var obtained = cwp.letter2index("ANA")
+        expect(expected).toStrictEqual(obtained)
     });
 });
 
