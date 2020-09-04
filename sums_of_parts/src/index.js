@@ -1,7 +1,12 @@
 function partsSums(){};
 
 function sum_elements_array(arreglo){
-    return arreglo[0];
+    var i_elements;
+    var sum_elements = 0;
+    for (i_elements=0; i_elements < arreglo.length; i_elements++){
+        sum_elements += arreglo[i_elements]
+    }
+    return sum_elements;
 };
 
 module.exports = {
