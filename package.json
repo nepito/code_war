@@ -3,7 +3,7 @@
   "private": true,
   "license": "ISC",
   "scripts": {
-    "test": "yarn workspace no_oddities_here test && yarn workspace cryptanalysis_word_patterns test"
+    "test": "yarn workspace no_oddities_here test && yarn workspace cryptanalysis_word_patterns test && yarn workspace sums_of_parts test"
   },
   "workspaces": [
     "no_oddities_here",
