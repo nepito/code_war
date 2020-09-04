@@ -12,12 +12,12 @@ describe("Should be a function", function(){
 
 describe("Should the function sum_elements_array return the sum", function(){
     test_is_a_function(sop.sum_elements_array);
+    function test_sum_elements_array(expected, arreglo){
+        let obtained = sop.sum_elements_array(arreglo);
+        expect(obtained).toStrictEqual(expected);
+    };
     test("", function(){
-        var expected = 1;
-        var obtained = sop.sum_elements_array([1]);
-        expect(obtained).toStrictEqual(expected);
-        var expected = 2;
-        var obtained = sop.sum_elements_array([2]);
-        expect(obtained).toStrictEqual(expected);
+        test_sum_elements_array(1, [1]);
+        test_sum_elements_array(2, [2]);
     });
 });
