@@ -9,7 +9,9 @@ function string2setarray( string ){
     return salida
 }
 
-function letter2index(){}
+function letter2index(){
+    return "0"
+}
 
 module.exports = {
   wordPattern: wordPattern,
