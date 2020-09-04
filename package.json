@@ -7,6 +7,7 @@
   },
   "workspaces": [
     "no_oddities_here",
-    "cryptanalysis_word_patterns"
+    "cryptanalysis_word_patterns",
+    "sums_of_parts"
   ]
 }
