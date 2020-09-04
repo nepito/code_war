@@ -20,5 +20,6 @@ describe("Should the function sum_elements_array return the sum", function(){
         test_sum_elements_array(1, [1]);
         test_sum_elements_array(2, [2]);
         test_sum_elements_array(3, [1, 2]);
+        test_sum_elements_array(6, [1, 2, 3, 0]);
     });
 });
