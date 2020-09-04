@@ -1,7 +1,8 @@
 
+const answer = require("../src/index")
 describe("partsSums",function() {
     function dotest(ls, expected) {
-        let actual = partsSums(ls);
+        let actual = answer.partsSums(ls);
         expect(actual).toStrictEqual(expected);
     };
 
