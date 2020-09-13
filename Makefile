@@ -8,6 +8,7 @@ clean:
 	rm --force --recursive node_modules
 	rm --force --recursive **/coverage
 	rm --force --recursive **/node_modules
+	rm --force --recursive **/reports
 tests:
 	yarn
 	yarn test -u
