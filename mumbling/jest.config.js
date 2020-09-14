@@ -1,14 +1,8 @@
 module.exports = {
-  collectCoverage: true,
-  projects: [
-    {
-      displayName: "test",
-      transform: {
-        "^.+\\.tsx?$": "<rootDir>/preprocess.js",
-      },
-      testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.([tj]sx?)$",
-      moduleFileExtensions: ["ts", "tsx", "js"],
-      collectCoverage: true,
-    },
-  ],
+  transform: {
+    '^.+\\.ts?$': 'ts-jest'
+  },
+  testEnvironment: 'node',
+  testRegex: '/tests/.*\\.(test|spec)?\\.(ts|tsx|js)$',
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node']
 };

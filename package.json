@@ -7,5 +7,13 @@
   },
   "workspaces": [
     "mumbling"
-  ]
+  ],
+  "devDependencies": {
+    "@stryker-mutator/core": "^3.3.1",
+    "stryker-api": "^0.24.1"
+  },
+  "dependencies": {
+    "@stryker-mutator/jest-runner": "^3.3.1",
+    "@stryker-mutator/typescript": "^3.3.1"
+  }
 }
