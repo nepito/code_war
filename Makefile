@@ -8,6 +8,8 @@ clean:
 	rm --force --recursive node_modules
 	rm --force --recursive mumbling/coverage
 	rm --force --recursive mumbling/node_modules
+	rm --force --recursive mumbling/reports
+	rm --force yarn.lock
 tests:
 	yarn
 	yarn test -u
