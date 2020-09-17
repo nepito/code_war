@@ -20,6 +20,8 @@ function is_pair(number){
 function append_pair(number, arreglo){
   if (is_pair(number)){
     arreglo.push(number);
+  } else if (number == undefined) {
+    arreglo.push(0);
   }
   return arreglo
 }
