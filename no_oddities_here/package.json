@@ -1,7 +1,7 @@
 {
   "name": "no_oddities_here",
   "version": "0.0.0-development",
-  "description": "Gatsby theme for website that curate Atom packages that provide and consume an Atom service",
+  "description": "Ejerciocio visto en code wars",
   "main": "index.js",
   "scripts": {
     "test": "jest"
