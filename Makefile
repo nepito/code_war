@@ -1,6 +1,7 @@
 mutants:
 	yarn
 	yarn workspace no_oddities_here stryker run | tee /dev/tty | grep "Survived" && exit 1 || exit 0
+	yarn workspace mumbling stryker run | tee /dev/tty | grep "Survived" && exit 1 || exit 0
 
 .PHONY: clean mutants tests
 
