@@ -22,9 +22,7 @@ describe( "Testing the function append_pair", function(){
     it( "should return [1,8] for (8,[1])", function(){
       expect(answer.append_pair(8, [1])).toStrictEqual([1, 8]);
     });
-    it( "should return [2] for (2,[])", function(){
-      var b = Array()
-      b.push(2)
-      expect(b).toStrictEqual([2]);
+    it( "should return [1,0] for (undefined,[1])", function(){
+      expect(answer.append_pair(undefined, [1])).toStrictEqual([1, 0]);
     });
 });
