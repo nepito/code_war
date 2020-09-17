@@ -1,7 +1,7 @@
 {
   "name": "mumbling",
   "version": "0.0.0-development",
-  "description": "Gatsby theme for website that curate Atom packages that provide and consume an Atom service",
+  "description": "Ejemplo de sumas de Rupany con mutantes",
   "main": "index.js",
   "scripts": {
     "test": "jest"
