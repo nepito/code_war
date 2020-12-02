@@ -5,7 +5,7 @@ describe("Should do nothing", function () {
     obtained = answer.pascal(deep);
     expect(expected).toStrictEqual(obtained);
   }
-  test("should second row Pascal is [[1]]", function () {
+  test("should second row Pascal is [[1], [1, 1]]", function () {
     expected = [[1], [1, 1]];
     assert_pascal_from_deep(2, expected)
   });
