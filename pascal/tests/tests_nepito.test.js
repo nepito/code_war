@@ -39,33 +39,36 @@ describe("Test internals_row", function () {
   });
 });
 
-describe("Test make_row", function(){
-  test("should make_row([2]) return [1, 2, 1]", function(){
+describe("Test make_row", function () {
+  test("should make_row([2]) return [1, 2, 1]", function () {
     expected = [1, 2, 1];
     obtained = answer.make_row([2]);
     expect(expected).toStrictEqual(obtained)
   });
-  test("should make_row([3, 3]) return [1, 3, 3, 1]", function(){
+  test("should make_row([3, 3]) return [1, 3, 3, 1]", function () {
     expected = [1, 3, 3, 1];
     obtained = answer.make_row([3, 3]);
     expect(expected).toStrictEqual(obtained)
   });
-  test("should make_row([]) return [1, 1]", function(){
+  test("should make_row([]) return [1, 1]", function () {
     expected = [1, 1];
     obtained = answer.make_row([]);
     expect(expected).toStrictEqual(obtained)
   });
 });
 
-describe("Test `next_row`", function(){
-  test("Should `next_row([1])` return [1, 1]", function(){
+describe("Test `next_row`", function () {
+  function assess_next_row(entrada, expected) {
+    obtained = answer.next_row(entrada);
+    expect(expected).toStrictEqual(obtained)
+  }
+
+  test("Should `next_row([1])` return [1, 1]", function () {
     expected = [1, 1];
-    obtained = answer.next_row([1]);
-    expect(expected).toStrictEqual(obtained)
+    assess_next_row([1], expected)
   });
-  test("Should `next_row([1, 1])` return [1, 2, 1]", function(){
+  test("Should `next_row([1, 1])` return [1, 2, 1]", function () {
     expected = [1, 2, 1];
-    obtained = answer.next_row([1, 1]);
-    expect(expected).toStrictEqual(obtained)
+    assess_next_row([1, 1], expected)
   });
 });
