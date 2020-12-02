@@ -7,6 +7,12 @@ function pascal( deep ){
     return salida
 }
   
+function internals_row( array ){
+  return [2]
+
+}
+
 module.exports = {
   pascal : pascal,
+  internals_row, internals_row,
 };
