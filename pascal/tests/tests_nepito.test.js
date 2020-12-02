@@ -46,4 +46,9 @@ describe("Test make_row", function(){
     obtained = answer.make_row([3, 3]);
     expect(expected).toStrictEqual(obtained)
   });
+  test("should make_row([]) return [1, 1]", function(){
+    expected = [1, 1];
+    obtained = answer.make_row([]);
+    expect(expected).toStrictEqual(obtained)
+  });
 });
