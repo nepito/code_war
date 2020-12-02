@@ -9,7 +9,7 @@ describe("Should do nothing", function () {
     expected = [[1], [1, 1]];
     assert_pascal_from_deep(2, expected)
   });
-  test.skip("should third row Pascal is [[1], [1, 1], [1, 2, 1]]", function () {
+  test("should third row Pascal is [[1], [1, 1], [1, 2, 1]]", function () {
     expected = [[1], [1, 1], [1, 2, 1]];
     assert_pascal_from_deep(3, expected)
   });
