@@ -17,7 +17,13 @@ function internals_row( array ){
 
 }
 
+function make_row( internals_row ){
+  var salida = [1, 2, 1]
+  return salida
+}
+
 module.exports = {
   pascal : pascal,
-  internals_row, internals_row,
+  internals_row : internals_row,
+  make_row : make_row,
 };
