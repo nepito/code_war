@@ -23,7 +23,8 @@ function make_row( internals_row ){
 }
 
 function next_row( present_row ){
-  var salida = [1, 1];
+  const interno = internals_row(present_row)
+  const salida = make_row(interno);
   return salida
 }
 
