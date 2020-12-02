@@ -17,4 +17,9 @@ describe("Test internals_row", function(){
     obtained = answer.internals_row([1, 1])
     expect(expected).toStrictEqual(obtained);
   });
+  test("should return the firt result", function(){
+    expected = [3, 3];
+    obtained = answer.internals_row([1, 2, 1])
+    expect(expected).toStrictEqual(obtained);
+  });
 });
