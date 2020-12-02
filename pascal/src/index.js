@@ -8,7 +8,12 @@ function pascal( deep ){
 }
   
 function internals_row( array ){
-  return [2]
+  var salida = [];
+  var i;
+  for(i=1; i < array.length; i++){
+    salida.push(array[i-1] + array[i])
+  }
+  return salida
 
 }
 
