@@ -21,8 +21,12 @@ describe("Test internals_row", function () {
     expected = [2];
     assess_internals_row([1, 1], expected)
   });
-  test("should return the firt result", function () {
+  test("should return the second result", function () {
     expected = [3, 3];
     assess_internals_row([1, 2, 1], expected)
+  });
+  test("should return the second result", function () {
+    expected = [4, 6, 4];
+    assess_internals_row([1, 3, 3, 1], expected)
   });
 });
