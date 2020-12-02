@@ -3,12 +3,14 @@
   "private": true,
   "license": "ISC",
   "scripts": {
-    "test": "yarn workspace no_oddities_here test && yarn workspace cryptanalysis_word_patterns test && yarn workspace sums_of_parts test && yarn workspace mumbling test"
+    "test_all": "yarn workspace no_oddities_here test && yarn workspace cryptanalysis_word_patterns test && yarn workspace sums_of_parts test && yarn workspace mumbling test",
+    "test": "yarn workspace pascal test"
   },
   "workspaces": [
     "no_oddities_here",
     "cryptanalysis_word_patterns",
     "mumbling",
+    "pascal",
     "sums_of_parts"
   ]
 }
