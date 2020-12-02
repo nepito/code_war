@@ -56,3 +56,11 @@ describe("Test make_row", function(){
     expect(expected).toStrictEqual(obtained)
   });
 });
+
+describe("Test `next_row`", function(){
+  test("Should `next_row([1])` return [2, 2]", function(){
+    expected = [1, 1];
+    obtained = answer.next_row([1]);
+    expect(expected).toStrictEqual(obtained)
+  });
+});
