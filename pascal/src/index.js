@@ -18,7 +18,7 @@ function internals_row( array ){
 }
 
 function make_row( internals_row ){
-  var salida = [1, 2, 1]
+  var salida = [1, ...internals_row, 1]
   return salida
 }
 
