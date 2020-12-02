@@ -22,7 +22,7 @@ function make_row( internals_row ){
   return salida
 }
 
-function next_row( present_row ){
+function calculate_next_row( present_row ){
   const interno = internals_row(present_row)
   const salida = make_row(interno);
   return salida
@@ -32,5 +32,5 @@ module.exports = {
   pascal : pascal,
   internals_row : internals_row,
   make_row : make_row,
-  next_row : next_row,
+  calculate_next_row : calculate_next_row,
 };

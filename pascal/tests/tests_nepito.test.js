@@ -57,9 +57,9 @@ describe("Test make_row", function () {
   });
 });
 
-describe("Test `next_row`", function () {
+describe("Test `calculate_next_row`", function () {
   function assess_next_row(entrada, expected) {
-    obtained = answer.next_row(entrada);
+    obtained = answer.calculate_next_row(entrada);
     expect(expected).toStrictEqual(obtained)
   }
 
