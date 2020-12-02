@@ -1,7 +1,11 @@
 function pascal( deep ){
     var salida = [[1]];
-    if (deep ==2) {
-      salida.push([1, 1]);
+    if(deep > 1){
+      var next_row;
+      for (var i = 1; i < deep; i++) {
+        next_row = calculate_next_row(salida[i - 1]);
+        salida.push(next_row);
+      }
     }
     // Return all non-odd values
     return salida
