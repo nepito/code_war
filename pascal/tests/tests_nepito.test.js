@@ -1,6 +1,6 @@
 const answer = require("../src/index");
 
-describe("Should do nothing", function(){
+describe("Should do nothing", function () {
   function assert_pascal_from_deep(deep, expected) {
     obtained = answer.pascal(deep);
     expect(expected).toStrictEqual(obtained);
@@ -11,15 +11,18 @@ describe("Should do nothing", function(){
   });
 });
 
-describe("Test internals_row", function(){
-  test("should return the firt result", function(){
+describe("Test internals_row", function () {
+  function assess_internals_row(entrada, expected) {
+    obtained = answer.internals_row(entrada)
+    expect(expected).toStrictEqual(obtained);
+  }
+
+  test("should return the firt result", function () {
     expected = [2];
-    obtained = answer.internals_row([1, 1])
-    expect(expected).toStrictEqual(obtained);
+    assess_internals_row([1, 1], expected)
   });
-  test("should return the firt result", function(){
+  test("should return the firt result", function () {
     expected = [3, 3];
-    obtained = answer.internals_row([1, 2, 1])
-    expect(expected).toStrictEqual(obtained);
+    assess_internals_row([1, 2, 1], expected)
   });
 });
