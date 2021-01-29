@@ -9,6 +9,7 @@
   "workspaces": [
     "no_oddities_here",
     "cryptanalysis_word_patterns",
+    "iq_test",
     "mumbling",
     "pascal",
     "sums_of_parts"
